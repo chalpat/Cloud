@@ -1,0 +1,29 @@
+{
+  "name": "ephemerol-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/static",
+  "devDependencies": {
+    "react-scripts": "0.7.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "ncp": "^2.0.0",
+    "del-cli":"^0.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.4.1",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.1",
+    "react-router": "^2.8.1",
+    "superagent": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "ncp build ../ephemerol/static",
+    "clean": "del -f ../ephemerol/static",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

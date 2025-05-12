@@ -1,0 +1,6 @@
+pytest==2.9.2
+mock
+werkzeug
+flask
+PyYAML
+flask-cors
